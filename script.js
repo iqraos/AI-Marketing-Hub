@@ -1,7 +1,15 @@
-function scrollToTools(){
-document.getElementById("tools").scrollIntoView({behavior:"smooth"});
+function showPopup(title,text){
+
+document.getElementById("popup").style.display="flex";
+
+document.getElementById("popupTitle").innerText=title;
+
+document.getElementById("popupText").innerText=text;
+
 }
 
-function subscribe(){
-alert("Thank you for subscribing!");
+function closePopup(){
+
+document.getElementById("popup").style.display="none";
+
 }
